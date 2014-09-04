@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4055C77F-33D2-4534-92FC-8BED4D5EDA05</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BeatsByACM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>974E77CC-E6AC-4BF3-B7D3-986AA120E899</key>
+		<string>ssh://github.com/acm-uiuc/beats-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BeatsByACM.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>974E77CC-E6AC-4BF3-B7D3-986AA120E899</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/acm-uiuc/beats-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>974E77CC-E6AC-4BF3-B7D3-986AA120E899</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>974E77CC-E6AC-4BF3-B7D3-986AA120E899</string>
+			<key>IDESourceControlWCCName</key>
+			<string>beats-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,28 +1,28 @@
 //
-//  ACMYoutubeViewController.m
+//  ACMYouTubeViewController.m
 //  BeatsByACM
 //
 //  Created by Robert Maciej Pieta on 8/31/14.
 //  Copyright (c) 2014 Zealous Amoeba. All rights reserved.
 //
 
-#import "ACMYoutubeViewController.h"
+#import "ACMYouTubeViewController.h"
 #import "ACMBeatsNetworkAPI.h"
 #import "ACMCurrentPlayCell.h"
 
-@interface ACMYoutubeViewController() <UISearchBarDelegate>
+@interface ACMYouTubeViewController() <UISearchBarDelegate>
 @property (nonatomic, strong) ACMBeatsNetworkAPI *networkAPI;
 @property (nonatomic, strong) NSArray *items;
 @end
 
-@implementation ACMYoutubeViewController
+@implementation ACMYouTubeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.networkAPI = [[ACMBeatsNetworkAPI alloc] init];
     
-    __weak ACMYoutubeViewController *weakSelf = self;
+    __weak ACMYouTubeViewController *weakSelf = self;
     self.networkAPI.completion = ^(NSError *error, NSData *data) {
         [weakSelf updateToData:data error:error];
     };
@@ -82,7 +82,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSDictionary *dict = self.items[indexPath.row];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:URL_YoutubeWatch,dict[@"id"][@"videoId"]]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:URL_YouTubeWatch,dict[@"id"][@"videoId"]]];
     self.selection(url);
     
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];

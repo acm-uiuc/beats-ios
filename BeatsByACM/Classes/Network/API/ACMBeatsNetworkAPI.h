@@ -19,10 +19,10 @@ typedef void (^CompletionBlock) (NSError *error, NSData *data);
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password;
 - (void)getCurrentlyPlaying;
 - (void)getCurrentQueue;
-- (void)addYoutubeURLToQueue:(NSURL *)youtubeURL;
+- (void)addYouTubeURLToQueue:(NSURL *)YouTubeURL;
 
 #pragma mark -
-#pragma mark Youtube Methods
+#pragma mark YouTube Methods
 
 - (void)searchForVideos:(NSString *)query;
 

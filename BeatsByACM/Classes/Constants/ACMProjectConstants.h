@@ -8,9 +8,9 @@
 
 
 // URL
-#define URL_VideoSelect @"http://www.youtube.com"
-#define URL_YoutubeWatch @"https://www.youtube.com/watch?v=%@"
-#define URL_YoutubeQuery @"https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=%@&key=%@"
+#define URL_VideoSelect @"http://www.YouTube.com"
+#define URL_YouTubeWatch @"https://www.YouTube.com/watch?v=%@"
+#define URL_YouTubeQuery @"https://www.googleapis.com/YouTube/v3/search?part=snippet&maxResults=20&q=%@&key=%@"
 
 #define URL_APILogin @"http://siebl-1104-04.acm.illinois.edu:5000//v1/session"
 #define URL_APIQueue @"http://siebl-1104-04.acm.illinois.edu:5000//v1/queue"
@@ -22,4 +22,4 @@
 #define Segue_VideoSelect @"toVideoSelectView"
 
 // Keys
-#define Key_Youtube @"AIzaSyB2-cLCsgRZbS38vdoLrYr3PYMqKR98cUk"
+#define Key_YouTube @"AIzaSyB2-cLCsgRZbS38vdoLrYr3PYMqKR98cUk"

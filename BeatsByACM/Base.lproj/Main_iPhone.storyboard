@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="850" y="303"/>
         </scene>
-        <!--Youtube View Controller - Youtube-->
+        <!--You Tube View Controller - YouTube-->
         <scene sceneID="X8x-xe-Pes">
             <objects>
-                <tableViewController id="Tj5-Am-z2t" customClass="ACMYoutubeViewController" sceneMemberID="viewController">
+                <tableViewController id="Tj5-Am-z2t" customClass="ACMYouTubeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="22" sectionFooterHeight="22" id="tan-9e-NeW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +157,7 @@
                             <outlet property="delegate" destination="Tj5-Am-z2t" id="iqZ-Ag-LxA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Youtube" id="RKz-85-lev">
+                    <navigationItem key="navigationItem" title="YouTube" id="RKz-85-lev">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Vbn-jD-lAt">
                             <connections>
                                 <action selector="cancelButton:" destination="Tj5-Am-z2t" id="j2H-gx-lsZ"/>
