@@ -43,12 +43,12 @@
     [self downloadForURLRequest:request];
 }
 
-- (void)addYoutubeURLToQueue:(NSURL *)youtubeURL {
+- (void)addYouTubeURLToQueue:(NSURL *)YouTubeURL {
     NSURL *url = [NSURL URLWithString:URL_APIQueueAdd];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     ACMUserManager *sharedManager = [ACMUserManager sharedInstance];
-    NSString *data = [NSString stringWithFormat:@"url=%@&token=%@",youtubeURL.absoluteString,sharedManager.session];
+    NSString *data = [NSString stringWithFormat:@"url=%@&token=%@",YouTubeURL.absoluteString,sharedManager.session];
     
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
@@ -58,11 +58,11 @@
 }
 
 #pragma mark -
-#pragma mark Youtube Methods
+#pragma mark YouTube Methods
 
 - (void)searchForVideos:(NSString *)query {
     query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *httpString = [NSString stringWithFormat:URL_YoutubeQuery,query,Key_Youtube];
+    NSString *httpString = [NSString stringWithFormat:URL_YouTubeQuery,query,Key_YouTube];
     NSURL *url = [NSURL URLWithString:httpString];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

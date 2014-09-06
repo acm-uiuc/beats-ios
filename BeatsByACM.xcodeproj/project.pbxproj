@@ -189,7 +189,7 @@
 			children = (
 				CE4CFD5819B526020025AE02 /* Login */,
 				CE4CFD4219B414C20025AE02 /* Queue */,
-				CE4CFD3E19B413A00025AE02 /* Youtube */,
+				CE4CFD3E19B413A00025AE02 /* YouTube */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -253,13 +253,13 @@
 			name = DownloadableImage;
 			sourceTree = "<group>";
 		};
-		CE4CFD3E19B413A00025AE02 /* Youtube */ = {
+		CE4CFD3E19B413A00025AE02 /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
 				CE4CFD3F19B413B40025AE02 /* ACMYoutubeViewController.h */,
 				CE4CFD4019B413B40025AE02 /* ACMYoutubeViewController.m */,
 			);
-			name = Youtube;
+			name = YouTube;
 			sourceTree = "<group>";
 		};
 		CE4CFD4219B414C20025AE02 /* Queue */ = {

@@ -1,5 +1,5 @@
 //
-//  ACMYoutubeViewController.h
+//  ACMYouTubeViewController.h
 //  BeatsByACM
 //
 //  Created by Robert Maciej Pieta on 8/31/14.
@@ -10,7 +10,7 @@
 
 typedef void (^SelectionBlock) (NSURL *selectedURL);
 
-@interface ACMYoutubeViewController : UITableViewController
+@interface ACMYouTubeViewController : UITableViewController
 @property (nonatomic, strong) SelectionBlock selection;
 
 @end

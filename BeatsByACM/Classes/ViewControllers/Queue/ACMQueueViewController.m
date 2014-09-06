@@ -7,7 +7,7 @@
 //
 
 #import "ACMQueueViewController.h"
-#import "ACMYoutubeViewController.h"
+#import "ACMYouTubeViewController.h"
 #import "ACMBeatsNetworkAPI.h"
 #import "ACMCurrentPlayCell.h"
 #import "ACMUserManager.h"
@@ -129,7 +129,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *dict = self.items[indexPath.row];
     
-    NSString *imageStr = [NSString stringWithFormat:@"http://img.youtube.com/vi/%@/default.jpg",[self youtubeIDFromURLStr:dict[@"url"]]];
+    NSString *imageStr = [NSString stringWithFormat:@"http://img.YouTube.com/vi/%@/default.jpg",[self YouTubeIDFromURLStr:dict[@"url"]]];
     
     if(indexPath.row == 0) {
         ACMCurrentPlayCell *cell = [tableView dequeueReusableCellWithIdentifier:@"playingCell" forIndexPath:indexPath];
@@ -153,7 +153,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (NSString *)youtubeIDFromURLStr:(NSString *)string {
+- (NSString *)YouTubeIDFromURLStr:(NSString *)string {
     return [string substringFromIndex:32];
 }
 
@@ -172,10 +172,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:Segue_VideoSelect]) {
         UINavigationController *navController = segue.destinationViewController;
-        ACMYoutubeViewController *youtubeVC = navController.viewControllers[0];
+        ACMYouTubeViewController *YouTubeVC = navController.viewControllers[0];
         
-        youtubeVC.selection = ^(NSURL *url) {
-            [self.addToQueue addYoutubeURLToQueue:url];
+        YouTubeVC.selection = ^(NSURL *url) {
+            [self.addToQueue addYouTubeURLToQueue:url];
         };
     }
 }
