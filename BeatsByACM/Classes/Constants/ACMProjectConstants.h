@@ -12,10 +12,10 @@
 #define URL_YouTubeWatch @"https://www.YouTube.com/watch?v=%@"
 #define URL_YouTubeQuery @"https://www.googleapis.com/YouTube/v3/search?part=snippet&maxResults=20&q=%@&key=%@"
 
-#define URL_APILogin @"http://siebl-1104-04.acm.illinois.edu:5000//v1/session"
-#define URL_APIQueue @"http://siebl-1104-04.acm.illinois.edu:5000//v1/queue"
-#define URL_APIQueueAdd @"http://siebl-1104-04.acm.illinois.edu:5000//v1/queue/add"
-#define URL_APICurrentlyPlaying @"http://siebl-1104-04.acm.illinois.edu:5000//v1/now_playing"
+#define URL_APILogin @"https://www-s.acm.illinois.edu/beats/1104/v1/session"
+#define URL_APIQueue @"https://www-s.acm.illinois.edu/beats/1104/v1/queue"
+#define URL_APIQueueAdd @"https://www-s.acm.illinois.edu/beats/1104/v1/queue/add"
+#define URL_APICurrentlyPlaying @"https://www-s.acm.illinois.edu/beats/1104/v1/now_playing"
 
 // Segues
 #define Segue_Login @"toLoginView"
